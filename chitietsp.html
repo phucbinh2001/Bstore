@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modaz - Web bán hàng</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    body {
+      background-color: #f7f6f6;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 5px 6px 6px 2px #e9ecef;
+      border-radius: 4px;
+    }
+
+    .dots {
+      height: 4px;
+      width: 4px;
+      margin-bottom: 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .badge {
+      padding: 7px;
+      padding-right: 9px;
+      padding-left: 16px;
+      box-shadow: 5px 6px 6px 2px #e9ecef;
+    }
+
+    .user-img {
+      margin-top: 4px;
+    }
+
+    .check-icon {
+      font-size: 17px;
+      color: #c3bfbf;
+      top: 1px;
+      position: relative;
+      margin-left: 3px;
+    }
+
+    .form-check-input {
+      margin-top: 6px;
+      margin-left: -24px !important;
+      cursor: pointer;
+    }
+
+    .form-check-input:focus {
+      box-shadow: none;
+    }
+
+    .icons i {
+      margin-left: 8px;
+    }
+
+    .reply {
+      margin-left: 12px;
+    }
+
+    .reply small {
+      color: #b7b4b4;
+    }
+
+    .reply small:hover {
+      color: green;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container-fluid menu">
+      <div class="container d-flex justify-content-between">
+        <a href=""><img src="./images/logo.png" alt="" /></a>
+        <div class="menu-link d-flex">
+          <ul class="d-flex">
+            <li class="mr-2"><a href="./index.html">Trang chủ</a></li>
+            <li class="mr-2"><a href="./thuonghieu.html">Sản phẩm</a></li>
+            <li class="mr-2"><a href="">Bài viết</a></li>
+            <li class="mr-2"><a href="">Liên hệ</a></li>
+          </ul>
+          <ul class="d-flex">
+            <li>
+              <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="./giohang.html"
+                ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background: #f5f5f5">
+      <div class="container title-box">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title-heading">
+              <h1 class="title NameProduct"></h1>
+            </div>
+            <!-- /.page-title-heading -->
+            <div class="breadcrumbs">
+              <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <li><a href="shop-3col.html">Sản phẩm</a></li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <li><a href="shop-3col-slide.html" class="NameProduct"></a></li>
+              </ul>
+            </div>
+            <!-- /.breadcrumbs -->
+          </div>
+          <!-- /.col-md-12 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <div class="container">
+      <div class="row">
+        <div
+          id="imgProduct"
+          class="col-6 pt-5"
+          style="justify-content: center; align-items: center"
+        ></div>
+        <div class="col-6" style="padding-left: 40px; padding-top: 50px">
+          <h2 class="NameProduct"></h2>
+          <div class="price">
+            <ins><span class="amount" id="gia"></span></ins>
+            <!-- <del><span class="regular">1.500.000đ</span></del> -->
+          </div>
+          <p class="pt-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+
+          <div class="product-quantity">
+            <div class="quantity">
+              <div class="input-group" style="width: 120px; display: flex">
+                <button class="btn btn-outline-secondary" type="button">
+                  -
+                </button>
+                <input
+                  id="soluong"
+                  ;
+                  style="text-align: center"
+                  type="number"
+                  class="form-control"
+                  placeholder="1"
+                  aria-label="Recipient's username with two button addons"
+                  value="1"
+                />
+                <button class="btn btn-outline-secondary" type="button">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="add-to-cart mt-3" id="btnAddCart"></div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Mô tả
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile"
+                type="button"
+                role="tab"
+                aria-controls="profile"
+                aria-selected="false"
+              >
+                Thông số
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact"
+                type="button"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+              >
+                Đánh giá
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <p class="text-center mt-5 mb-5">Chưa có mô tả</p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              style="align-items: center; justify-content: center"
+            >
+              <table class="table table-striped table-hover">
+                <tbody>
+                  <tr>
+                    <th scope="row">Mã sản phẩm</th>
+                    <td>MS143</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Khối lượng</th>
+                    <td>500g</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Chất liệu</th>
+                    <td colspan="2">100% cotton</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Kích cỡ</th>
+                    <td colspan="2">S - M - XL</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div
+              class="tab-pane fade col-6"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              <!-- COMMMENT -->
+              <div class="container mt-5">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-12">
+                    <!-- .form ở đây -->
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Tên người dùng</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="username"
+                        aria-describedby="emailHelp"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Đánh giá</label>
+                      <textarea
+                        class="form-control"
+                        name=""
+                        id="noidung"
+                        cols="30"
+                        rows="5"
+                      ></textarea>
+                      <input type="hidden" name="" id="idsp">
+                    </div>
+
+                    <button
+                      onclick="themBinhluan()"
+                      class="mt-3 btn btn-primary"
+                    >
+                      Gửi đánh giá
+                    </button>
+
+                    <div
+                      class="headings d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <h5>Bình luận</h5>
+
+                    </div>
+                    <div class="card p-3" id="cmt_box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" style="background: #f5f5f5">
+      <div class="container sub-footer">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <h4>Miễn phí giao hàng</h4>
+            <p>Cho hoá đơn từ 200K</p>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-money" aria-hidden="true"></i>
+            <h4>Thanh toán khi nhận hàng</h4>
+            <p>Không lo bị lừa đảo</p>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-gift" aria-hidden="true"></i>
+            <h4>Nhiều khuyến mãi</h4>
+            <p>Mua hàng với giá siêu ưu đãi</p>
+          </div>
+          <div class="col-3">
+            <i class="far fa-clock" aria-hidden="true"></i>
+            <h4>Mở cửa 24/7</h4>
+            <p>Mua sắm bất cứ lúc nào</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row footer">
+          <div class="col-3 pt-5 pb-3">
+            <img src="./images/logo.png" alt="" />
+            <p>FPT Polytechnic, CS3 Quang Trung</p>
+            <p>0879 533 534</p>
+            <p>phucbinh.2001@gmail.com</p>
+          </div>
+          <div class="col-3 pt-5">
+            <a href="">Về chúng tôi</a>
+            <a href="">Blog</a>
+            <a href="">Liên hệ</a>
+          </div>
+          <div class="col-3 pt-5">
+            <a href="">Đăng nhập/ Đăng kí</a>
+            <a href="">GIỏ hàng</a>
+            <a href="">Whislist Items</a>
+          </div>
+          <div class="col-3 pt-5">
+            <a href="">Câu hỏi thường gặp</a>
+            <a href="">Điều khoản sử dụng</a>
+            <a href="">Đổi trả / bảo hành</a>
+          </div>
+          <div class="col-12 p-3 border-top text-center">
+            Copyright @2018 Modaz
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/sanpham_chitiet.js"></script>
+  <script src="./js/cart.js"></script>
+  <script src="./js/binhluan.js"></script>
+  <script>
+    showDetailProduct();
+    showComment();
+  </script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"
+  ></script>
+</html>

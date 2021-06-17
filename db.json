@@ -1,0 +1,298 @@
+{
+  "banners": [
+    {
+      "img": "banner1.jpg",
+      "content": "<span>XU HƯỚNG 2021</span><h2>NÂNG CẤP CAMERA</h2><p>Thách thức bóng đêm</p><button class='btn btn-danger pl-5 pr-5'>Xem ngay</button>"
+    },
+    {
+      "img": "banner2.jpg",
+      "content": "<span>XU HƯỚNG 2021</span><h2>THẾ HỆ MỚI</h2><p>Giảm 50% cho những đơn hàng đầu tiên</p><button class='btn btn-danger pl-5 pr-5'>Xem ngay</button>"
+    },
+    {
+      "img": "banner3.jpg",
+      "content": "<span>XU HƯỚNG 2021</span><h2>CHỐNG NƯỚC</h2><p>Dân chơi không sợ mưa rơi</p><button class='btn btn-danger pl-5 pr-5'>Xem ngay</button>"
+    }
+  ],
+  "products": [
+    {
+      "id": "29",
+      "tensp": "ES",
+      "anh": "9.jpg",
+      "gia": 14205557,
+      "soluong": 500,
+      "id_thuonghieu": 1,
+      "luotmua": 1958,
+      "new": false,
+      "hot": false,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "6/21/2020"
+    },
+    {
+      "id": "30",
+      "tensp": "RX-7",
+      "anh": "1.jpg",
+      "gia": 10567670,
+      "soluong": 983,
+      "id_thuonghieu": 2,
+      "luotmua": 1026,
+      "new": true,
+      "hot": false,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "5/20/2020"
+    },
+    {
+      "id": "31",
+      "tensp": "Blazer",
+      "anh": "12.jpg",
+      "gia": 11588837,
+      "soluong": 917,
+      "id_thuonghieu": 4,
+      "luotmua": 4669,
+      "new": true,
+      "hot": true,
+      "show": false,
+      "mota": null,
+      "ngaynhap": "9/17/2020"
+    },
+    {
+      "id": "32",
+      "tensp": "Taurus",
+      "anh": "8.jpg",
+      "gia": 4586179,
+      "soluong": 876,
+      "id_thuonghieu": 4,
+      "luotmua": 2697,
+      "new": true,
+      "hot": false,
+      "show": false,
+      "mota": null,
+      "ngaynhap": "4/28/2020"
+    },
+    {
+      "id": "34",
+      "tensp": "Cherokee",
+      "anh": "15.jpg",
+      "gia": 4187752,
+      "soluong": 889,
+      "id_thuonghieu": 4,
+      "luotmua": 2464,
+      "new": true,
+      "hot": false,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "6/1/2020"
+    },
+    {
+      "id": "35",
+      "tensp": "3000GT",
+      "anh": "4.jpg",
+      "gia": 5164027,
+      "soluong": 991,
+      "id_thuonghieu": 2,
+      "luotmua": 3296,
+      "new": false,
+      "hot": true,
+      "show": false,
+      "mota": null,
+      "ngaynhap": "4/5/2021"
+    },
+    {
+      "id": "36",
+      "tensp": "Escape",
+      "anh": "2.jpg",
+      "gia": 8852000,
+      "soluong": 819,
+      "id_thuonghieu": 1,
+      "luotmua": 2586,
+      "new": false,
+      "hot": true,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "3/23/2021"
+    },
+    {
+      "id": "37",
+      "tensp": "Accord",
+      "anh": "3.jpg",
+      "gia": 13264594,
+      "soluong": 629,
+      "id_thuonghieu": 4,
+      "luotmua": 4298,
+      "new": true,
+      "hot": true,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "3/28/2021"
+    },
+    {
+      "id": "39",
+      "tensp": "Caravan",
+      "anh": "14.jpg",
+      "gia": 6023139,
+      "soluong": 763,
+      "id_thuonghieu": 2,
+      "luotmua": 1383,
+      "new": true,
+      "hot": true,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "7/3/2020"
+    },
+    {
+      "id": "40",
+      "tensp": "Thunderbird",
+      "anh": "13.jpg",
+      "gia": 7107370,
+      "soluong": 925,
+      "id_thuonghieu": 1,
+      "luotmua": 3262,
+      "new": true,
+      "hot": true,
+      "show": false,
+      "mota": null,
+      "ngaynhap": "5/10/2020"
+    },
+    {
+      "id": "41",
+      "tensp": "Sportvan G20",
+      "anh": "5.jpg",
+      "gia": 14049615,
+      "soluong": 959,
+      "id_thuonghieu": 4,
+      "luotmua": 3006,
+      "new": true,
+      "hot": true,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "5/6/2020"
+    },
+    {
+      "id": "42",
+      "tensp": "Boxster",
+      "anh": "15.jpg",
+      "gia": 12730359,
+      "soluong": 670,
+      "id_thuonghieu": 3,
+      "luotmua": 4248,
+      "new": false,
+      "hot": false,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "7/11/2020"
+    },
+    {
+      "id": "43",
+      "tensp": "Civic",
+      "anh": "13.jpg",
+      "gia": 6431468,
+      "soluong": 856,
+      "id_thuonghieu": 1,
+      "luotmua": 2089,
+      "new": false,
+      "hot": true,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "10/23/2020"
+    },
+    {
+      "id": "44",
+      "tensp": "Voyager",
+      "anh": "11.jpg",
+      "gia": 14464154,
+      "soluong": 541,
+      "id_thuonghieu": 1,
+      "luotmua": 3723,
+      "new": false,
+      "hot": false,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "2/5/2021"
+    },
+    {
+      "id": "45",
+      "tensp": "Sportvan G30",
+      "anh": "9.jpg",
+      "gia": 14490229,
+      "soluong": 582,
+      "id_thuonghieu": 5,
+      "luotmua": 2544,
+      "new": true,
+      "hot": false,
+      "show": false,
+      "mota": null,
+      "ngaynhap": "6/21/2020"
+    },
+    {
+      "id": "46",
+      "tensp": "Dakota",
+      "anh": "11.jpg",
+      "gia": 6835487,
+      "soluong": 512,
+      "id_thuonghieu": 1,
+      "luotmua": 1666,
+      "new": true,
+      "hot": false,
+      "show": false,
+      "mota": null,
+      "ngaynhap": "3/24/2021"
+    },
+    {
+      "id": "47",
+      "tensp": "LeBaron",
+      "anh": "14.jpg",
+      "gia": 7283737,
+      "soluong": 939,
+      "id_thuonghieu": 4,
+      "luotmua": 4859,
+      "new": false,
+      "hot": true,
+      "show": true,
+      "mota": null,
+      "ngaynhap": "2/9/2021"
+    }
+  ],
+  "brands": [
+    {
+      "show": false,
+      "tenthuonghieu": "Samsung ẩn",
+      "id": "2"
+    },
+    {
+      "show": false,
+      "tenthuonghieu": "Apple an",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "show": false,
+      "tenthuonghieu": "Xiaomi"
+    },
+    {
+      "show": false,
+      "tenthuonghieu": "OPPO",
+      "id": "5"
+    }
+  ],
+  "orders": [
+    {
+      "address": "afsdfsd",
+      "hoten": "Bình",
+      "sdt": "phucbinh.2001@gmail.com",
+      "ghichu": "sdfg",
+      "trangthai": false,
+      "ngaydat": "2021-04-20T01:37:37.642Z",
+      "id": 12
+    }
+  ],
+  "chitietdonhang": [
+    {
+      "order_id": 12,
+      "tendt": "12 Pro Min",
+      "gia": 54,
+      "quantity": 2,
+      "id": 1
+    }
+  ]
+}

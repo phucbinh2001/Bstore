@@ -1,0 +1,300 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+.menu {
+  height: 80px;
+  display: flex;
+  border-bottom: 1px solid #efefef;
+  align-items: center;
+}
+
+.menu img {
+  height: 25px;
+}
+
+.menu-link li {
+  margin: 0 16px;
+  font-size: 15px;
+}
+
+.menu-link a {
+  color: #333;
+}
+
+/* .banner {
+    height: 500px;
+    background-color: #333;
+} */
+
+.slide-content {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(150px);
+  height: 100%;
+  font-size: larger;
+  color: #561818;
+}
+
+.slide-content h2 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+
+.danhmuc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.danhmuc-item a {
+  background-color: #fff;
+  padding: 7px;
+  width: 35%;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.danhmuc-item {
+  height: 250px;
+  background-size: cover;
+  width: 32%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.title {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+}
+
+h2.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  background-color: red;
+}
+
+.sanpham-item {
+  width: 25%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  position: relative;
+}
+
+.sanpham-item .add-to-cart {
+  opacity: 0;
+  transition: .4s;
+}
+
+.sanpham-item:hover {
+  box-shadow: 0 0px 7px #d4d4d4;
+}
+
+.sanpham-item .tag {
+  position: absolute;
+  font-size: 14px;
+  left: 15px;
+  top: 15px;
+}
+
+.sanpham-item img {
+  width: 95%;
+}
+
+.sanpham-item .gia {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.sanpham-item .product-thumb {
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cacsanpham {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-group .btn-outline-primary {
+  color: #999;
+  border-color: #999;
+}
+
+.btn-group .btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  outline: 0;
+}
+
+.btn-group .btn-outline-primary:hover {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+}
+
+.sub-footer {
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 20px;
+}
+
+.sub-footer i {
+  color: red;
+  font-size: 25px;
+}
+
+.sub-footer h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.footer .col-3 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+
+.footer {
+  font-size: 15px;
+}
+
+.footer a {
+  font-weight: 700;
+  color: #333;
+  margin: 5px;
+}
+
+.footer img {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+/* Trang brand */
+.title-box {
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumbs ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.breadcrumbs ul li a {
+  font-weight: 400;
+  color: #666;
+  margin: 0 5px;
+}
+
+.breadcrumbs ul li:last-child a {
+  font-weight: 500;
+}
+
+.list-group-item a {
+  color: black;
+}
+
+.search {
+  border: 1px solid #efefef;
+  padding: 3px;
+}
+
+.search input {
+  border: none;
+}
+
+.search input:focus {
+  outline: 0;
+  border: none;
+}
+
+.sanpham-item3 {
+  width: calc(100% / 3);
+}
+
+/* SẢN PHẨM MỚI  */
+.price ins {
+  font-size: 30px;
+  color: red;
+  text-decoration: none;
+}
+
+.price del {
+  font-size: 18px;
+  padding-left: 5px;
+  color: #c5c5c5;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.nav {
+  justify-content: center;
+}
+
+.tab-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.empty img {
+  width: 300px;
+}

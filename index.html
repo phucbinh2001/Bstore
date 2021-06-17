@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modaz - Web bán hàng</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+  <div class="container-fluid menu">
+    <div class="container d-flex justify-content-between">
+      <a href=""><img src="./images/logo.png" alt="" /></a>
+      <div class="menu-link d-flex">
+        <ul class="d-flex">
+          <li class="mr-2"><a href="./index.html">Trang chủ</a></li>
+          <li class="mr-2"><a href="./thuonghieu.html">Sản phẩm</a></li>
+          <li class="mr-2"><a href="">Bài viết</a></li>
+          <li class="mr-2"><a href="">Liên hệ</a></li>
+        </ul>
+        <ul class="d-flex">
+          <li>
+            <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="./giohang.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid p-0 banner">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" id="topBanner">
+        <div class="carousel-item active">
+          <div class="slide-content">
+            <span>XU HƯỚNG 2021</span>
+            <h2>NÂNG CẤP CAMERA</h2>
+            <p>Thách thức bóng đêm</p><button class='btn btn-danger pl-5 pr-5'>Xem ngay</button>
+          </div>
+          <img src="./images/banner1.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <div class="slide-content">
+            <span>XU HƯỚNG 2021</span>
+            <h2>THẾ HỆ MỚI</h2>
+            <p>Giảm 50% cho những đơn hàng đầu tiên</p><button class='btn btn-danger pl-5 pr-5'>Xem ngay</button>
+          </div>
+          <img src="./images/banner2.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <div class="slide-content">
+            <span>XU HƯỚNG 2021</span>
+            <h2>CHỐNG NƯỚC</h2>
+            <p>Dân chơi không sợ mưa rơi</p><button class='btn btn-danger pl-5 pr-5'>Xem ngay</button>
+          </div>
+          <img src="./images/banner3.jpg" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container danhmuc mt-4">
+    <div class="danhmuc-item" style="background-image: url(./images/man.jpg)">
+      <a href="">LAPTOP</a>
+    </div>
+    <div class="danhmuc-item" style="background-image: url(./images/kid.jpg)">
+      <a href="">SMARTPHONE</a>
+    </div>
+    <div class="danhmuc-item" style="background-image: url(./images/woman.jpg)">
+      <a href="">TABLET</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row sanpham-box">
+      <div class="col-12">
+        <h2 class="title">Sản phẩm mới</h2>
+      </div>
+      <div class="cacsanpham mt-5" id="spmoi"></div>
+    </div>
+  </div>
+  <div class="container-fluid" style="
+        height: 500px;
+        background-image: url('./images/banner_mid.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+      "></div>
+  <div class="container">
+    <div class="row sanpham-box2">
+      <div class="col-12">
+        <h2 class="title">Bán chạy</h2>
+        <div class="option m-4">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+            <label class="btn btn-outline-primary" for="btnradio1">Điện thoại</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btnradio2">Laptop</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+            <label class="btn btn-outline-primary" for="btnradio3">Máy tính bảng</label>
+          </div>
+        </div>
+      </div>
+      <div class="cacsanpham" id="spbanchay">
+      </div>
+    </div>
+    <div class="container-fluid" style="background: #f5f5f5">
+      <div class="container sub-footer">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <h4>Miễn phí giao hàng</h4>
+            <p>Cho hoá đơn từ 200K</p>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-money" aria-hidden="true"></i>
+            <h4>Thanh toán khi nhận hàng</h4>
+            <p>Không lo bị lừa đảo</p>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-gift" aria-hidden="true"></i>
+            <h4>Nhiều khuyến mãi</h4>
+            <p>Mua hàng với giá siêu ưu đãi</p>
+          </div>
+          <div class="col-3">
+            <i class="far fa-clock" aria-hidden="true"></i>
+            <h4>Mở cửa 24/7</h4>
+            <p>Mua sắm bất cứ lúc nào</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row footer">
+          <div class="col-3 pt-5 pb-3">
+            <img src="./images/logo.png" alt="" />
+            <p>FPT Polytechnic, CS3 Quang Trung</p>
+            <p>0879 533 534</p>
+            <p>phucbinh.2001@gmail.com</p>
+          </div>
+          <div class="col-3 pt-5">
+            <a href="">Về chúng tôi</a>
+            <a href="">Blog</a>
+            <a href="">Liên hệ</a>
+          </div>
+          <div class="col-3 pt-5">
+            <a href="">Đăng nhập/ Đăng kí</a>
+            <a href="">GIỏ hàng</a>
+            <a href="">Whislist Items</a>
+          </div>
+          <div class="col-3 pt-5">
+            <a href="">Câu hỏi thường gặp</a>
+            <a href="">Điều khoản sử dụng</a>
+            <a href="">Đổi trả / bảo hành</a>
+          </div>
+          <div class="col-12 p-3 border-top text-center">
+            Copyright @2018 Modaz
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+<script src="./js/sanpham.js"></script>
+<script src="./js/banner.js"></script>
+<script src="./js/sanpham_chitiet.js"></script>
+<script src="./js/cart.js"></script>
+<script>
+  getProductsNew();
+  // getBanner();
+</script>
+
+</html>
